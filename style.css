@@ -1,0 +1,292 @@
+html {
+    font-size: 20px;
+    font-family: 'Amatic SC', cursive;
+}
+
+/* Style body as a flexbox with two flex items: Intro container and Section container. */
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.left-container {
+    height: 100vh;
+    width: 70vw;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.right-container {
+    height: 100vh;
+    width: 30vw;
+    position: absolute;
+    right: 0px;
+}
+
+.tabcontent {
+    width: 70vw;
+}
+
+/* Styling of header text. */
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 22rem;
+    margin: 0px;
+}
+
+/* Styling of Section container. Column flexbox, four flex items taking a quarter of height each. */
+
+.section {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling of marker pen Section titles. */
+.section h4 {
+    font-size: 30rem;
+    font-family: 'Amatic SC', cursive;
+    position: absolute;
+    margin: auto auto auto 9px; 
+    color: white;
+}
+
+.section:hover h4 {
+    text-decoration: underline;
+}
+
+/* background colours of sections */
+#section1 {
+    background-image: url(./bluesky5.jpg);
+    background-size: cover; 
+}
+
+#section2 {
+    background-image: url(./bluesky1.jpg);
+    background-size: cover; 
+}
+
+#section3 {
+    background-image: url(./bluesky2.jpg);
+    background-size: cover; 
+}
+
+#section4 {
+    background-image: url(./bluesky4.jpg);
+    background-size: cover; 
+}
+
+/* Styling of tab contents */
+
+.tabcontent{
+    height: 85vh;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    display: none;
+}
+
+.art-container {
+    background-color: whitesmoke;
+    margin: 2% 2% 0% 2%;
+    position: static;
+}
+
+/* Tab Zero */
+
+#zero-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#intro-title {
+    font-size: 30rem;
+}
+
+#intro-text {
+    font-size: 10rem;
+    text-align: center;
+}
+
+/* Tab One */
+#one-content {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#part-one-title {
+    left: 0;
+}
+
+#video {
+    width: 90%;
+    height: 90%;
+    margin: 0;
+}
+
+.credits {
+    margin: 0;
+}
+
+/* Tab Two*/
+
+#two-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+#part-two-title {
+    left: 0;
+}
+
+#part-two-content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 90%;
+}
+
+#painting-container {
+    position: static;
+    width: 70%;
+    height: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#bridge-container {
+    position: static;
+    height: auto;
+    width: 30%;
+    height: 90%;
+}
+
+#bridge-container h2, #levert-container h2, #just-container h2, #loop-1-container h2, #roomy-container h2 {
+    font-size: 15rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#bridge-container h3, #levert-container h3, #just-container h3, #loop-1-container h3, #roomy-container h3 {
+    font-size: 10rem;
+    margin: 0;
+}
+
+#painting {
+    height: 90%;
+    width: auto;
+}
+
+/* Tab Three*/
+
+#three-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+#part-three-content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-photos {
+    max-height: 70%;
+    width: auto;
+    margin: 1%;
+}
+
+#photography-container {
+    height: 100%;
+    width: 60%;
+    right: 0;
+    display: block;
+    justify-content: center;
+}
+
+#slideshow {
+    height: 80%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery {
+    width: 100%;
+    background-color: transparent;
+    height: 20%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides {
+    position: static;
+    width: 82%;
+    display: none;
+}
+
+#slide3 {
+    display: block;
+}
+
+#levert-container {
+    height: 100%;
+    width: 25%;
+}
+
+/* Tab Four */ 
+
+#four-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+#part-four-content {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#just-container, #loop-1-container, #roomy-container {
+    height: 100%;
+    width: 25%;
+}
+
+
+.credits, #part-one-title, #part-two-title, #part-three-title, #part-four-title {
+    font-size: 10rem;
+}
+
+.section:hover, #banner:hover, .controls:hover {
+    cursor: pointer;
+}
+
+.controls:hover {
+    text-decoration: underline;
+}
+
+#final-credits {
+    font-size: 8rem;
+    margin: 1% 1% 1% 1%;
+}
