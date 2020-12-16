@@ -1,6 +1,6 @@
-# Project Name
+# A Sailor, A Cook
 
-> One paragraph statement about the project.
+> "A Sailor, A Cook" is a multimedia art project curated by Tristan Cole for the final year of his degree in Music Production. In addition to the co-ordination of the artworks, the project also entailed exhibiting the music, film and artwork together on a website.
 
 ![screenshot](./app_screenshot.png)
 
@@ -8,9 +8,9 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML
+- CSS
+- Vanilla JS
 
 ## Live Demo
 
