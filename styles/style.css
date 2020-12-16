@@ -1,5 +1,5 @@
 html {
-    font-size: 20px;
+    font-size: calc(min(0.15vh, 0.09vw) * 3);
     font-family: 'Amatic SC', cursive;
 }
 
@@ -61,22 +61,22 @@ h1 {
 
 /* background colours of sections */
 #section1 {
-    background-image: url(./bluesky5.jpg);
+    background-image: url(../assets/images/blue-sky-1.jpg);
     background-size: cover; 
 }
 
 #section2 {
-    background-image: url(./bluesky1.jpg);
+    background-image: url(../assets/images/blue-sky-2.jpg);
     background-size: cover; 
 }
 
 #section3 {
-    background-image: url(./bluesky2.jpg);
+    background-image: url(../assets/images/blue-sky-3.jpg);
     background-size: cover; 
 }
 
 #section4 {
-    background-image: url(./bluesky4.jpg);
+    background-image: url(../assets/images/blue-sky-4.jpg);
     background-size: cover; 
 }
 
