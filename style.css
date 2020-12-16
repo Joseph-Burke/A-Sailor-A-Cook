@@ -1,5 +1,5 @@
 html {
-    font-size: min(0.15vh, 0.09vw);
+    font-size: calc(min(0.15vh, 0.09vw) * 4);
     font-family: 'Amatic SC', cursive;
 }
 
