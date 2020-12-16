@@ -1,5 +1,5 @@
 html {
-    font-size: calc(min(0.15vh, 0.09vw) * 3);
+    font-size: min(0.15vh, 0.09vw);
     font-family: 'Amatic SC', cursive;
 }
 
@@ -61,22 +61,22 @@ h1 {
 
 /* background colours of sections */
 #section1 {
-    background-image: url(../assets/images/blue-sky-1.jpg);
+    background-image: url(./bluesky5.jpg);
     background-size: cover; 
 }
 
 #section2 {
-    background-image: url(../assets/images/blue-sky-2.jpg);
+    background-image: url(./bluesky1.jpg);
     background-size: cover; 
 }
 
 #section3 {
-    background-image: url(../assets/images/blue-sky-3.jpg);
+    background-image: url(./bluesky2.jpg);
     background-size: cover; 
 }
 
 #section4 {
-    background-image: url(../assets/images/blue-sky-4.jpg);
+    background-image: url(./bluesky4.jpg);
     background-size: cover; 
 }
 
@@ -133,6 +133,10 @@ h1 {
     margin: 0;
 }
 
+#video:focus {
+    outline: none;
+}
+
 .credits {
     margin: 0;
 }
@@ -152,7 +156,7 @@ h1 {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    height: 90%;
+    height: 80%;
 }
 
 #painting-container {
@@ -206,7 +210,8 @@ h1 {
 
 .gallery-photos {
     max-height: 70%;
-    width: auto;
+    max-width: 17%;
+    height: auto;
     margin: 1%;
 }
 
@@ -238,7 +243,9 @@ h1 {
 
 .slides {
     position: static;
-    width: 82%;
+    width: auto;
+    max-height: 70%;
+    max-width: 90%;
     display: none;
 }
 

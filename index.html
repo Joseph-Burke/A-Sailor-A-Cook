@@ -1,11 +1,11 @@
 <!DOCTYPE html>
     <!--Head section. Title, links to css and javascript-->
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
         <title>A Sailor, A Cook</title>
-        <link href="./styles/style.css" type="text/css" rel="stylesheet">
-        <script src="./js/main.js" defer></script>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <script src="main.js" defer></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
 
@@ -24,7 +24,7 @@
             <div id="one-content" class="tabcontent">
                 <span id="part-one-title">A Film</span>
                 <video id="video" width="1920" height="1440" controls>
-                    <source src="../assets/videos/Barbs Short 480.mp4" type="video/MP4">
+                    <source src="./Barbs Short 480.mp4" type="video/MP4">
                   Your browser does not support the video tag.
                 </video>
                 <br>
@@ -41,7 +41,8 @@
                 <div id="part-two-content">
                 
                 <div class="art-container" id="painting-container">
-                    <img id="painting" src="./assets/images/Joe G Painting 1.jpeg">
+                    <img id="painting" src="./A SAILOR A COOK/Artwork/Joe G Painting 1.jpeg">
+
                 </div>
 
                 <div class="art-container" id="bridge-container">
@@ -49,11 +50,11 @@
                     <h2>By The Bridge<br><span class="time" id="time-bridge">2:54</span></h2>
                     <h3 id="play-bridge" class="controls" onclick= "pauseAll();document.getElementById('audio-bridge').play()">Play</h3>
                     <h3 id="pause-bridge" class="controls" onclick= "document.getElementById('audio-bridge').pause()">Pause</h3>
-                    <h3 id="restart-bridge" class="controls" onclick= "document.getElementById('audio-bridge').currentTime = 0.01">From The Top</h3>
+                    <h3 id="restart-bridge" class="controls" onclick= "pauseAll();document.getElementById('audio-bridge').currentTime = 0.01;document.getElementById('audio-bridge').play()">From The Top</h3>
                     <h3 id="stop-bridge" class="controls" onclick= "document.getElementById('audio-bridge').currentTime = 0;document.getElementById('audio-bridge').pause()">Stop</h3>
 
-                    <audio id="audio-bridge" class="audio" ontimeupdate="updateTime('audio-bridge', 'time-bridge')">
-                        <source src="./assets/audio/By The Bridge.wav" type="audio/wav">
+                    <audio id="audio-bridge" class="audio" class="media" ontimeupdate="updateTime('audio-bridge', 'time-bridge')">
+                        <source src="./A SAILOR A COOK/Music/By The Bridge.wav" type="audio/wav">
                         Your browser does not support the audio element.
                     </audio>
                 </div>
@@ -76,11 +77,11 @@
                     <h2>Le Vert<br><span class="time" id="time-levert">4:16</span></h2>
                     <h3 id="play-levert" class="controls" onclick= "pauseAll();document.getElementById('audio-levert').play()">Play</h3>
                     <h3 id="pause-levert" class="controls" onclick= "document.getElementById('audio-levert').pause()">Pause</h3>
-                    <h3 id="restart-levert" class="controls" onclick= "document.getElementById('audio-levert').currentTime = 0.01">From The Top</h3>
+                    <h3 id="restart-levert" class="controls" onclick= "pauseAll();document.getElementById('audio-levert').currentTime = 0.01;document.getElementById('audio-levert').play()">From The Top</h3>
                     <h3 id="stop-levert" class="controls" onclick= "document.getElementById('audio-levert').currentTime = 0;document.getElementById('audio-levert').pause()">Stop</h3>
                     
-                    <audio id="audio-levert" class="audio" ontimeupdate="updateTime('audio-levert', 'time-levert')">
-                    <source src="./assets/audio/Le-Vert.mp3" type="audio/mp3">
+                    <audio id="audio-levert" class="audio" class="media" ontimeupdate="updateTime('audio-levert', 'time-levert')">
+                    <source src="./A SAILOR A COOK/Music/Le-Vert.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
                     </audio>
                 </div>
@@ -89,20 +90,20 @@
 
                 <div id="slideshow"> 
 
-                    <img class="slides" id="slide2" src="./assets/images/pasture-2.jpg">
-                    <img class="slides" id="slide1" src="./assets/images/beach.jpg">
-                    <img class="slides" id="slide3" src="./assets/images/pasture.jpg">
-                    <img class="slides" id="slide4" src="./assets/images/field.jpg">
-                    <img class="slides" id="slide5" src="./assets/images/junction.jpg">
+                <img class="slides" id="slide1" src="./A SAILOR A COOK/Photography/_17_01906.jpg">
+                <img class="slides" id="slide2" src="./A SAILOR A COOK/Photography/_22_01911.jpg">
+                <img class="slides" id="slide3" src="./A SAILOR A COOK/Photography/_24_00497.jpg">
+                <img class="slides" id="slide4" src="./A SAILOR A COOK/Photography/_35_00508.jpg">
+                <img class="slides" id="slide5" src="./A SAILOR A COOK/Photography/__2_01892.jpg">
 
                 </div>
 
                 <div id="gallery">
-                <img class="gallery-photos" id="photo1" src="./assets/images/pasture-2.jpg" onclick="enlarge(event, 'slide1')">
-                <img class="gallery-photos" id="photo2" src="./assets/images/beach.jpg" onclick="enlarge(event, 'slide2')">
-                <img class="gallery-photos" id="photo3" src="./assets/images/pasture.jpg" onclick="enlarge(event, 'slide3')">
-                <img class="gallery-photos" id="photo4" src="./assets/images/field.jpg" onclick="enlarge(event, 'slide4')">
-                <img class="gallery-photos" id="photo5" src="./assets/images/junction.jpg" onclick="enlarge(event, 'slide5')">
+                <img class="gallery-photos" id="photo1" src="./A SAILOR A COOK/Photography/_17_01906.jpg" onclick="enlarge(event, 'slide1')">
+                <img class="gallery-photos" id="photo2" src="./A SAILOR A COOK/Photography/_22_01911.jpg" onclick="enlarge(event, 'slide2')">
+                <img class="gallery-photos" id="photo3" src="./A SAILOR A COOK/Photography/_24_00497.jpg" onclick="enlarge(event, 'slide3')">
+                <img class="gallery-photos" id="photo4" src="./A SAILOR A COOK/Photography/_35_00508.jpg" onclick="enlarge(event, 'slide4')">
+                <img class="gallery-photos" id="photo5" src="./A SAILOR A COOK/Photography/__2_01892.jpg" onclick="enlarge(event, 'slide5')">
                 </div>      
                 </div>
             </div>
@@ -122,9 +123,9 @@
                     <h2>Just<br><span class="time" id="time-just">1:52</span></h2>
                     <h3 id="play-just" class="controls" onclick= "pauseAll();document.getElementById('audio-just').play()">Play</h3>
                     <h3 id="pause-just" class="controls" onclick= "document.getElementById('audio-just').pause()">Pause</h3>
-                    <h3 id="restart-just" class="controls" onclick= "document.getElementById('audio-just').currentTime = 0.01">From The Top</h3>
+                    <h3 id="restart-just" class="controls" onclick= "pauseAll();document.getElementById('audio-just').currentTime = 0.01;document.getElementById('audio-just').play()">From The Top</h3>
                     <h3 id="stop-just" class="controls" onclick= "document.getElementById('audio-just').currentTime = 0;document.getElementById('audio-just').pause()">Stop</h3>
-                    <audio id="audio-just" class="audio" ontimeupdate="updateTime('audio-just', 'time-just')">
+                    <audio id="audio-just" class="audio" class="media" ontimeupdate="updateTime('audio-just', 'time-just')">
                     <source src="./A SAILOR A COOK/Music/Just.wav" type="audio/wav">
                     Your browser does not support the audio element.
                     </audio>
@@ -134,9 +135,9 @@
                     <h2>Loop 1<br><span class="time" id="time-loop-1">3:07</span></h2>
                     <h3 id="play-loop-1" class="controls" onclick= "pauseAll();document.getElementById('audio-loop-1').play()">Play</h3>
                     <h3 id="pause-loop-1" class="controls" onclick= "document.getElementById('audio-loop-1').pause()">Pause</h3>
-                    <h3 id="restart-loop-1" class="controls" onclick= "document.getElementById('audio-loop-1').currentTime = 0.01">From The Top</h3>
+                    <h3 id="restart-loop-1" class="controls" onclick= "pauseAll();document.getElementById('audio-loop-1').currentTime = 0.01;document.getElementById('audio-loop-1').play()">From The Top</h3>
                     <h3 id="stop-loop-1" class="controls" onclick= "document.getElementById('audio-loop-1').currentTime = 0;document.getElementById('audio-loop-1').pause()">Stop</h3>
-                    <audio id="audio-loop-1" class="audio" ontimeupdate="updateTime('audio-loop-1', 'time-loop-1')">
+                    <audio id="audio-loop-1" class="audio" class="media" ontimeupdate="updateTime('audio-loop-1', 'time-loop-1')">
                     <source src="./A SAILOR A COOK/Music/Loop 1.wav" type="audio/wav">
                     Your browser does not support the audio element.
                     </audio>
@@ -146,9 +147,9 @@
                     <h2>Roomy<br><span class="time" id="time-roomy">2:33</span></h2>
                     <h3 id="play-roomy" class="controls" onclick= "pauseAll();document.getElementById('audio-roomy').play()">Play</h3>
                     <h3 id="pause-roomy" class="controls" onclick= "document.getElementById('audio-roomy').pause()">Pause</h3>
-                    <h3 id="restart-roomy" class="controls" onclick= "document.getElementById('audio-roomy').currentTime = 0.01">From The Top</h3>
+                    <h3 id="restart-roomy" class="controls" onclick= "pauseAll();document.getElementById('audio-roomy').currentTime = 0.01;document.getElementById('audio-roomy').play()">From The Top</h3>
                     <h3 id="stop-roomy" class="controls" onclick= "document.getElementById('audio-roomy').currentTime = 0;document.getElementById('audio-roomy').pause()">Stop</h3>
-                    <audio id="audio-roomy" class="audio" ontimeupdate="updateTime('audio-roomy', 'time-roomy')">
+                    <audio id="audio-roomy" class="audio" class="media" ontimeupdate="updateTime('audio-roomy', 'time-roomy')">
                     <source src="./A SAILOR A COOK/Music/Roomy.wav" type="audio/wav">
                     Your browser does not support the audio element.
                     </audio>
@@ -166,7 +167,7 @@
         <!--'Right container', occupying right hand side of the page.
             Consists of 4 tabs, 1 for each part of the project.-->
         <div class="right-container">
-            <div class="section" class="tablinks" onclick="openTab(event, 'one-content')" id="section1">
+            <div class="section" class="tablinks" onclick="openTab(event, 'one-content');" id="section1">
                 <h4>
                     One
                 </h4>

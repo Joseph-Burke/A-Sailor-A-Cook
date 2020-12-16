@@ -1,5 +1,5 @@
 function openTab(evt, sectionName) {
-    var i, tabcontent, tablinks;
+    var i, tabcontent, tablinks, media;
 
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -13,6 +13,13 @@ function openTab(evt, sectionName) {
 
     document.getElementById(sectionName).style.display = "flex";
     evt.currentTarget.className += " active";
+
+    media=document.getElementsByClassName("audio");
+    for (i = 0; i < media.length; i++) {
+        media[i].pause();
+    }
+
+    document.getElementById("video").pause();
 }
 
 function enlarge(evt, slideName) {
